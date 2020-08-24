@@ -3,29 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <title>URL Shortener</title>
   </head>
   <body>
-    <h1>URL Shortener</h1>
-    <form action="" method="POST">
-      <label for="fullUrl">URL</label>
-      <input type="url" name="fullUrl" id="fullUrl" />
-      <button type="submit">Shrink</button>
-    </form>
+    <div class="container">
+      <h1>URL Shortener</h1>
+      <form action="" method="POST" class="form-inline my-4">
+        <label for="fullUrl" class="sr-only">URL</label>
+        <input
+          type="url"
+          name="fullUrl"
+          id="fullUrl"
+          placeholder="URL"
+          class="col form-control mr-2"
+        />
+        <button type="submit" class="btn btn-success">Shrink</button>
+      </form>
 
-    <table>
-      <tr>
-        <th>Full URL</th>
-        <th>Short URL</th>
-        <th>Clicks</th>
-      </tr>
-      <tr>
-        <td>
-          <a href="https://hassanmuhashamy.com">https://hassanmuhashamy.com</a>
-        </td>
-        <td><a href="/hm.com">hm.com</a></td>
-        <td>10</td>
-      </tr>
-    </table>
+      <table>
+        <tr>
+          <th>Full URL</th>
+          <th>Short URL</th>
+          <th>Clicks</th>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://hassanmuhashamy.com"
+              >https://hassanmuhashamy.com</a
+            >
+          </td>
+          <td><a href="/hm.com">hm.com</a></td>
+          <td>10</td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
